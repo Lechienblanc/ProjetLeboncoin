@@ -1,3 +1,12 @@
+# Set up the project
+
+create repo on your computer 
+
+git clone https://github.com/Lechienblanc/ProjetLeboncoin.git
+
+cd ProjetLeboncoin && git pull
+
+
 # Php-fpm-alpine x Nginx
 ### Symfony | Docker
 
