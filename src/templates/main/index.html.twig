@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Accueil {% endblock %}
+
+{% block body %}
+    <main class="container">
+        <div class="col-12">
+            <h1> Accueil </h1>
+            <p> Top catégrories </p>
+        </div>
+        <div>
+            <ul class="nav justify-content-center">
+            {% for category in categorie %}
+                <li class="nav-item">
+                    <h3>
+                        <a class="nav-link text-dark" href="{{ path('categorielist', {name: category.name}) }}"> {{ category.name }} </a>
+                    </h3>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="col-12">
+            {{ dump() }}
+        </div>
+    </main>
+{% endblock %}
