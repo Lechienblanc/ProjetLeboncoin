@@ -5,10 +5,17 @@
 {% block body %}
     <main class="container">
         <div class="col-12">
-            <h1> Catégorie  {{ category.name }} </h1>
+            <h1> Catégorie {{ category.name }} </h1>
         </div>
-        <div class="col-12">
-            {{ dump() }}
+        <div class="col-12 d-flex flex-row gap-5">
+            {% for articles in article %}
+                <div class="d-flex flex-column">
+                    <p> {{ articles.name }}</p>
+                    <p> {{ articles.price }}€ </p>
+                </div>
+            {% endfor %}
         </div>
+        {{ dump() }}
+
     </main>
 {% endblock %}
