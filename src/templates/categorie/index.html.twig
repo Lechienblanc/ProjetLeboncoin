@@ -5,10 +5,23 @@
 {% block body %}
     <main class="container">
         <div class="col-12">
-            <h1> Catégorie  {{ category.name }} </h1>
+            <h1> Catégorie {{ category.name }} </h1>
         </div>
-        <div class="col-12">
-            {{ dump() }}
+        <div class="col-12 d-flex flex-row justify-content-center gap-5">
+            {% for articles in article %}
+                <div class="d-flex flex-column">
+                    <div>
+                        <img src="{{ images.name }}">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h4><a href="{{ path('detailarticle', {id: articles.id}) }}">{{ articles.name }} </a></h4>
+                        <p> {{ articles.price }} €</p>
+                    </div>
+                    <a class="redir" href="#"></a>
+                </div>
+            {% endfor %}
         </div>
+        {{ dump() }}
+
     </main>
 {% endblock %}

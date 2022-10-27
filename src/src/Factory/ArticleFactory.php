@@ -45,7 +45,7 @@ final class ArticleFactory extends ModelFactory
 
         return [
             // TODO add your default values here (https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories)
-            'name' => self::faker()->text(),
+            'name' => self::faker()->word(),
             'description' => self::faker()->text(),
             'price' => self::faker()->randomNumber(),
             'isAvailable' => self::faker()->boolean(),
