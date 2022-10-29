@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <nav class="navbar navbar-dark bg-dark justify-content-center ">
     <div class="container-fluid d-flex flex-row justify-content-lg-evenly">
         <div class="d-flex">
@@ -17,5 +18,33 @@
                 <a href="#"> Ajouter une annonce </a>
             </div>
         </div>
+=======
+<nav class="navbar navbar-light bg-light justify-content-center ">
+    <div class="d-flex flex-column align-items-center ">
+        <a class="navbar-brand" href="{{ path('app_main') }}">LeBonCoin du pauvre </a>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light " type="submit">Search</button>
+        </form>
+>>>>>>> 70ae5bf49de58213136054d1832dbc312dc3d932
+    </div>
+    <div>
+        <ul>
+            {% if app.user %}
+                <li>
+                    <a href="#"> Mon compte </a>
+                </li>
+                <li>
+                    <a href="{{ path('app_logout') }}" > Me deconnecter  </a>
+                </li>
+            {% else %}
+                <li>
+                    <a href="{{ path('app_register') }}" > M'inscrire  </a>
+                </li>
+                <li>
+                    <a href="{{ path('app_login') }}" > Me connecter  </a>
+                </li>
+            {% endif %}
+        </ul>
     </div>
 </nav>
