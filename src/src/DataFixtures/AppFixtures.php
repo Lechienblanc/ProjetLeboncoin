@@ -16,10 +16,10 @@ class AppFixtures extends Fixture
         // $product = new Product();
         // $manager->persist($product);
 
-        CategorieFactory::createMany(10);
+        CategorieFactory::createMany(5);
         UserFactory::createMany(5);
-        ArticleFactory::createMany(20);
-        ImageFactory::createMany(30);
+        ArticleFactory::createMany(40);
+        ImageFactory::createMany(60);
 
         $manager->flush();
     }

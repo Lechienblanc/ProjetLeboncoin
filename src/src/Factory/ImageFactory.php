@@ -40,8 +40,8 @@ final class ImageFactory extends ModelFactory
     {
         return [
             // TODO add your default values here (https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories)
-            'name' => self::faker()->imageUrl(260, 260, 'image', true, 'test', true),
-            'article' => ArticleFactory::random(),
+            'name' => self::faker()->imageUrl(250, 320, 'image', true, 'test', true),
+            'article' => ArticleFactory::random()
         ];
     }
 
