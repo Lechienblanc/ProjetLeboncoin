@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ArticleController!{% endblock %}
+
+{% block body %}
+<div>
+    <h1> {{ article.name }} </h1>
+    <p> {{ article.description }}</p>
+    <p> {{ article.price }}</p>
+    <p> {{ article.createdAt|ago }}</p>
+</div>
+{% endblock %}
