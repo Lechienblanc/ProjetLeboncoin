@@ -9,12 +9,12 @@ docker-compose up -d
 Déplacer le composer.json (n'importe quel dossier juste il faut le garder) 
 puis lancer un composer require symfony/runtime puis coller le contenant du composer.json dans le nouveau.
 Puis faire un composer i
+````
+Pour crée la db et les tables 
+````symphony console d:d:c puis symphony console d:m:m````
 
-````Pour crée la db et les tables 
-symphony console d:d:c puis symphony console d:m:m
-
-````Pour lancer les datafixture
-symphony console d:f:l --no-interaction
+Pour lancer les datafixture
+````symphony console d:f:l --no-interaction````
 
 Pensez ensuite à aller exécuter toutes vos commandes depuis l'intérieur du container.
 
